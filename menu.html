@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BoilerMeal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class=bodyclass>
+  <div class="container">
+    <div class="header">
+      <h1> Weekly <strong>Menu</strong>
+      </h1>
+    </div>
+
+    <div class="background">
+
+      <div class="mainBox">
+        
+        <h3 id="date-container"></h3>
+        <h2> Breakfast </h2>
+          <ul>
+            <li>......................</li>
+            <li>......................</li>
+            <li>......................</li>
+          </ul>
+        <h2> Lunch </h2>
+          <ul>
+            <li>......................</li>
+            <li>......................</li>
+            <li>......................</li>
+          </ul>
+        <h2> Dinner </h2>
+          <ul>
+            <li>......................</li>
+            <li>......................</li>
+            <li>......................</li>
+          </ul>
+        <button type = "submit" class="button button1">Change</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function getCurrentDateAndTime() {
+    const months = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    const days = [
+      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
+
+    const dateTime = new Date();
+    const dayOfWeek = days[dateTime.getDay()];
+    const dayOfMonth = dateTime.getDate();
+    const monthName = months[dateTime.getMonth()];
+
+    const formattedDate = `${dayOfWeek}, ${dayOfMonth}th ${monthName}`;
+    return formattedDate;
+  }
+
+  const dateDisplay = document.getElementById("date-container");
+  dateDisplay.innerText = getCurrentDateAndTime();
+</script>
+</html>

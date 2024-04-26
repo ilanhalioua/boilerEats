@@ -1,0 +1,130 @@
+body{
+  background-color: #f4efe4;
+}
+
+.container {
+  background-color: #FDF9F9;
+  width: 40%;
+  height: 35%;
+  border: 2.5px solid black;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+  border-radius: 30px;
+  margin-bottom: 13%; /**/
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.bodyclass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%; /**/
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+h1 {
+  margin: auto;
+  padding-bottom: 5%;
+  text-align: center;
+  font-size: 210%;
+}
+
+.button {
+
+  border: none;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  width: 65%;
+
+  font-size: 100%;
+
+  margin: 5% 18%;
+  margin-bottom: 5%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+
+
+  border-radius: 12px;
+  background-color: #EBE5D8;
+  color: black;
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color: grey;
+  color: white;
+}
+
+.text-divider {
+  display: block;
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+}
+
+.logo {
+  display: block;
+  margin-left: 17%;
+  margin-right: auto;
+  width: 75%;
+
+}
+
+
+/* Half size of a normal computer screen */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 150%;
+  }
+
+  .container {
+    margin-top: 30px;
+    width: 50%;
+  }
+  .button {
+    font-size: 90%;
+  }
+
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 135%;
+  }
+
+  .container {
+    margin-top: 100px;
+    width: 75%;
+  }
+  .button {
+    font-size: 80%;
+  }
+}
+
+/* Very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 130%;
+  }
+
+  .container {
+    padding-top: 5%;
+    margin-top: 50%;
+    width: 80%;
+  }
+  .button {
+    font-size: 80%;
+  }
+
+}
+
+

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	/*border: 2px solid black;*/
+}
+
+body{ 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header {
+	border-bottom: 1px solid black;
+	height: 72px;
+  text-align: center;
+	vertical-align: middle;
+	line-height: 72px;
+  /*background-color: #CEB888;*/
+  background-color: #4c4a43;
+  color: white;
+
+	/*position: sticky; /*fix header*/
+  top: 0; 	 /*fix header*/
+  z-index: 999;   /*fix header*/*/
+	
+}
+
+/*.banner {
+        height: 10vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+.rankSection{
+	background-color: #f4efe4;
+	/*width: 90vw;*/
+  /*height: 485px;*/
+  height: 90vh;
+	/*border: solid black;*/
+	border-bottom: 2px solid black;
+
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	
+}
+
+.bckg_img{
+	position: absolute;
+	width: 100%;
+	height: 485px;
+}
+
+.podiumBox{
+	width: 75%;
+	position: absolute;
+	/*border-top: 1px solid black;
+	border-bottom: 1px solid black;*/
+	
+}
+
+.flex-container{
+	display: flex;
+  align-items: flex-end;
+	justify-content: space-between;
+
+}
+
+.top1, .top2, .top3{
+	/*border: 1px solid black;*/
+	width: 32.6%; 
+	float: left;
+	text-align: center;
+}
+
+
+.nameInRank{
+	/*border: 1px solid black;*/
+	margin: 4px;
+	font-family: Garamond;
+	font-weight: bold;
+	font-size: 1.8rem;
+
+}
+
+.podiumNumber{
+	font-family: Garamond;
+	font-size: 5rem;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-names{
+	display: flex;
+  align-items: flex-end;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#rank2box{  
+	height: 140px;
+	border: 1px solid black;
+	background-color: #CEB888;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-top-left-radius: 10px;
+  
+  /*bottom: 0;
+  transform-origin: bottom;
+  will-change: transform;
+  animation: growHeight 1.4s ease-in-out backwards;*/
+}
+
+#rank1box{  
+	height: 230px;
+	border: 1px solid black;
+	background-color: #CEB888;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+  /*bottom: 0;
+  transform-origin: bottom;
+  will-change: transform;
+  animation: growHeight 2.5s ease-in-out backwards;*/
+}
+
+#rank3box{ 
+	height: 70px;
+	border: 1px solid black;
+	background-color: #CEB888;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-top-right-radius: 10px;
+  
+  /*bottom: 0;
+  transform-origin: bottom;
+  will-change: transform;
+  animation: growHeight 0.8s ease-in-out backwards;*/
+}
+
+#rank1box:hover, #rank2box:hover, #rank3box:hover {
+  cursor: pointer;
+  background-color: #d7c7a3;
+
+}
+
+/*@keyframes growHeight {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+}*/
+
+.podiumBase{  
+	margin-top: 0.8%;
+  height: 55px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 55px;
+	border: 1px solid black;
+	background-color: #4c4a43;
+	color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.rank1Section{ /*rankSection (sameforALl)*/
+  background-color: #f4efe4;
+  padding-bottom: 8px;
+  /*height: 800px;*/ /*Maybe delete*/
+}
+
+.rank-topArea{
+  background-color: #CEB888;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+.rank-title{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.choiceInfoBox_gray, .choiceInfoBox_gold{
+  margin-left: 30px;
+  margin-right: 30px;
+	border: 1px solid black;
+  border-radius: 5px;
+	color: black;
+	padding-left: 4%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.choiceInfoBox_gray{ /*Change to unique infoBox*/
+  background-color: #f4efe4;
+}
+
+.choiceInfoBox_gold{
+  background-color: #f4efe4;
+}
+
+.boxContainer {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex; 
+  flex-wrap: wrap; /* Allows boxes to wrap onto the next line */
+  gap: 15px; /* Space between boxes */
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  flex: 1 0 calc(25% - 15px); /* Adjusted to account for the gap */
+  height: 410px;
+  background-color: #d5ccb3;;
+  border: 1px solid #000000; 
+  border-radius: 5px;
+  padding: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  /*line-height: 350px;*/ 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.foodImage{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 80%;
+}
+
+/* Half size of a normal computer screen */
+@media (max-width: 800px) {
+  .box {
+    flex: 0 0 calc(50% - 15px); /* 100% divided by 2 boxes minus the gap */
+  }
+}
+
+/* Very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .box {
+    flex: 0 0 calc(100% - 15px); /* Each box takes full width minus the gap */
+  }
+
+  .rankSection{
+    background-color: #f4efe4;
+    height: 700px;
+  }
+
+  .nameInRank{
+    font-size: 1.5rem;
+  }
+  
+  .podiumNumber {
+    font-size: 4.5rem;
+  }
+}
+
+
+.rank2Section{
+  border-top: 2px solid black;
+  background-color: #f4efe4;
+  /*padding-bottom: 8px;*/
+	/*height: 800px;*/ /*Maybe delete*/
+}
+
+.rank3Section{
+  border-top: 2px solid black;
+  background-color: #f4efe4; 
+  padding-bottom: 8px;
+  /*height: 800px;*/ /*Maybe delete*/
+}
+
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	/*font-size: 4rem;*/
+	/*padding-bottom: 12px;*/
+}
+
+h3{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: lighter;
+	/*font-size: 4rem;*/
+	/*padding-bottom: 12px;*/
+}
+
+h4, h5, h6{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: lighter;
+	/*font-size: 4rem;*/
+	/*padding-bottom: 12px;*/
+}
+
+/*li {
+  text-align: left;
+}*/

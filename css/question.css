@@ -1,0 +1,233 @@
+body {
+  background-color: #f4efe4;
+}
+
+.container {
+  background-color: #FDF9F9;
+  width: 40%;
+  height: 35%;
+  border: 2.5px solid black;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+  border-radius: 30px;
+  margin-bottom: 13%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.bodyclass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1 {
+  margin: auto;
+  padding-bottom: 5%;
+  text-align: center;
+  font-size: 150%;
+}
+
+
+
+h3 {
+  margin: auto;
+  padding-bottom: 4%;
+  text-align: center;
+  font-size: 100%;
+}
+
+.button {
+
+  border: none;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  width: 97%;
+  font-size: 100%;
+  margin: 18%;
+  margin-bottom: 5%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height: 12%;
+
+}
+
+.button {
+
+
+  border-radius: 12px;
+  background-color: #EBE5D8;
+  color: black;
+  border: 1px solid black;
+  margin-bottom: -40%;
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
+}
+
+
+
+.wrapper .button1 {
+  position: absolute;
+  transform: translate(35%, -260%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+.wrapper .button2 {
+  position: absolute;
+  transform: translate(35%, -430%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+
+.wrapper .button3 {
+  position: absolute;
+  transform: translate(35%, -600%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+
+.wrapper .button:hover {
+  background-color: grey;
+  color: white;
+}
+
+
+.libro {
+  display: block;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: auto;
+  max-width: 200%;
+  height: 390px;
+  weight: 550px;
+  margin-bottom: -19%;
+}
+
+.wrapper {
+  position: relative;
+  width: 50%;
+}
+
+.wrapper p {
+  position: absolute;
+  transform: translate(35%, -740%);
+  -ms-transform: translate(-50%, -50%);
+  padding-bottom: 20px;
+  font-size: 130%;
+}
+
+
+/* Half size of a normal computer screen */
+@media (max-width: 1200px) {
+
+  .wrapper p {
+
+    transform: translate(50%, -790%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 110%;
+  }
+}
+
+/* Half size of a normal computer screen */
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 150%;
+  }
+
+  .container {
+    margin-top: 30px;
+    width: 400px;
+    height: 425px;
+  }
+
+  .button {
+    font-size: 90%;
+  }
+
+  .wrapper p {
+
+    transform: translate(50%, -750%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 100%;
+  }
+
+  .libro {
+    height: 360px;
+
+  }
+
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 120%;
+  }
+
+  .container {
+    margin-top: 50px;
+    width: 350px;
+    height: 370px;
+
+  }
+
+  .button {
+    font-size: 80%;
+  }
+
+  .libro {
+    height: 300px;
+  }
+
+  .wrapper p {
+
+    transform: translate(45%, -650%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 90%;
+
+  }
+
+}
+
+/* Very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 120%;
+  }
+
+  .container {
+    padding-top: 5%;
+    margin-top: 40%;
+    padding-bottom: 6%;
+    width: 80%;
+
+  }
+
+  .button {
+    font-size: 80%;
+  }
+
+  .libro {
+    height: 300px;
+    margin-left: 2px;
+  }
+
+  .wrapper p {
+
+    transform: translate(45%, -650%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 90%;
+
+  }
+
+}

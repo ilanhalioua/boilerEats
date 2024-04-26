@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+}
+.bodyclass {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f4efe4;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+  /*background-color: #CEB888;*/
+  background-color: #4c4a43;
+  color: white;
+}
+
+
+.background{
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mainBox{
+  width: 50%;
+  position: absolute;
+  background-color:#eae1cd;
+  border: 2px solid #403E3E;
+  border-radius: 20px;
+  padding-bottom: 1.5%;
+
+}
+h2{
+  font-size: 120%;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+ul{
+   margin-left: 10%;
+   margin-bottom: 3%;
+   margin-top:1%;
+}
+#date-container {
+   border: 1px solid black; 
+   margin-top:2%;
+   width:35%;
+   margin-left:35%;
+   padding-left:2%;
+   padding-right:2%;
+   margin-bottom:2%;
+}
+
+
+.button {
+
+  border: none;
+  color: white;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  text-align: center;
+  width: 20%;
+  font-size: 80%;
+  margin: 1% 69%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top:4%;
+}
+
+.button1 {
+
+  border-radius: 12px;
+  background-color: #EBE5D8;
+  color: black;
+  border: 1.5px solid black;
+  margin-bottom:-20%;
+}
+
+.button1:hover {
+  background-color: grey;
+  color: white;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Styles for screens up to 480px wide */
+@media (max-width: 480px) {
+    .mainBox{
+      width: 95%; /* Further increase width for very small screens */
+      padding-left: 20px;
+    }
+    
+    #date-container {
+      margin-left:30%;
+      margin-top:4%;
+      margin-bottom:10%;
+    }
+    
+    .button1 {
+      border-radius: 10px;
+      margin-bottom: 5%;
+    }
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.6rem;
+    }
+
+    strong {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    h2 {
+        font-size: 1rem; /* Adjust header and font sizes */
+    }
+}
